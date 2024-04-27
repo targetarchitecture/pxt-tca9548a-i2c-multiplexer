@@ -26,4 +26,14 @@ namespace TCA9548A {
     export function initialise(address: number): void {
         i2cAddr = address;
     }
+
+
+    /**
+* Set the i2c address of the  TCA9548A
+**/
+    //% block="initialise2"
+    //% blockId=TCA9548A_init
+    export function initialisev2q(address: number): void {
+        i2cAddr = address;
+    }
 }
