@@ -18,7 +18,7 @@ namespace TCA9548A {
         control.waitMicros(50)
     }
 
-    /**
+/**
 * Set the i2c address of the  TCA9548A
 **/
     //% block="initialise"
