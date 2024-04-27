@@ -1,0 +1,26 @@
+{
+    "name": "TCA9548A i2c multiplexer",
+    "version": "1.0.2",
+    "description": "The TCA9548A is a handy little chip that allows your BBC Microbit to interact with multiple I2C devices. By itself, the Microbit can only handle one I2C device at a time. This can be limiting if you want to connect various sensors, displays, or other I2C modules to your project. That's where the TCA9548A comes in! This chip acts as an I2C multiplexer, essentially working like a multi-lane highway for I2C communication. It allows you to connect up to eight I2C devices to a single I2C port on your Microbit. You can then use software to control which device you want to talk to, selecting them one at a time.",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts"
+    ],
+    "testFiles": [],
+    "public": true,
+    "targetVersions": {
+        "target": "6.0.26",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {}
+    }
+}
