@@ -13,9 +13,8 @@ namespace TCA9548A {
     //% block="select channel"
     //% blockId=TCA9548A_iselectChannel
     //% channel.min=0 channel.max=7 
-    export function selectChannel(channel: number): void {
-     
-        pins.i2cWriteNumber(i2cAddr, channel + 1, NumberFormat.UInt8BE)
+    export function selectChannel(channel: number): void {     
+        pins.i2cWriteNumber(i2cAddr,  1<<channel, NumberFormat.UInt8BE)
         control.waitMicros(50)
     }
 
